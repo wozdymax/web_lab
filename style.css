@@ -92,8 +92,14 @@ h2{
 }
 
 .end{
-    background-image: url("D:/Study/web/lab1/BACKGROUND.jpg");
+    /*background-image: url("D:/Study/web/lab1/BACKGROUND.jpg");*/
+    background: 
+		linear-gradient(rgba(35, 47, 56, 0.6), rgba(35, 47, 56, 0.6)), 
+		url("D:/Study/web/lab1/BACKGROUND.jpg");
     background-position: right center;
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
     padding: 17px 250px 17px 250px;
     display: flex;
     color: #ffffff;
