@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Oxygen';
+    src: url("Oxygen/Oxygen-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url("Lora/Lora-Regular.ttf");
+}
+  
+.begin{
+    padding: 17px 250px 17px 250px;
+    display: flex;
+    color: #2e2e2e;
+}
+
+.escape{
+    width: 571px;
+    padding-top: 5px;
+    font-family: "Lora";
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em; 
+    text-align: justify;
+}
+
+.navigation1{
+    margin: 10px 20px 10px 20px;
+    font-family: "Oxygen";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.6000000238418579px;
+    text-align: left;
+
+}
+
+.heading{
+    margin-top: 110px;
+    margin-left: 250px;
+    margin-right: 250px;
+    width: 940px;
+    height: 159px;
+    padding: 0px, 218px, 75px, 218px;
+}
+
+h1{
+    margin-top: -7px;
+    margin-bottom: 0px;
+    font-family: "Lora";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #2e2e2e;
+}
+
+h2{
+    font-family: "Oxygen";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #2e2e2e;
+    opacity: 0.63;
+}
+
+.image{
+    margin-top: 40px;
+    overflow: hidden;
+}
+.image img{
+    padding: 0px;
+    height: 534px;
+    width: 100%;
+    margin-top: -100px;
+    margin-bottom: -100px;
+}
+
+.maintext{
+    padding: 138px 240px 137px 240px;
+    font-family: "Oxygen";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #101315;
+}
+
+.end{
+    background-image: url("D:/Study/web/lab1/BACKGROUND.jpg");
+    background-position: right center;
+    padding: 17px 250px 17px 250px;
+    display: flex;
+    color: #ffffff;
+}
+
+.navigation2{
+    margin: 10px 20px 10px 20px;
+    font-family: "Oxygen";
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: right;
+    opacity: 0.6;
+}
