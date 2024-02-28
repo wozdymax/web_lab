@@ -1,45 +1,51 @@
 @font-face {
-    font-family: "Oxygen";
-    src: url("Oxygen/Oxygen-Regular.ttf");
+    font-family: 'Oxygen';
+    src: url(Oxygen/Oxygen-Regular.ttf);
 }
+
 
 @font-face {
-    font-family: "Lora";
-    src: url("Lora/Lora-Regular.ttf");
+    font-family: 'Lora';
+    src: url(Lora/Lora-Regular.ttf);
 }
 
-.begin{
+
+.menu1 {
     padding: 17px 250px 17px 250px;
     display: flex;
     color: #2e2e2e;
 }
 
-.begin a{
+
+.navigation1 {
     margin: 10px 20px 10px 20px;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: "Oxygen";
+    font-family: 'Oxygen', sans-serif;
     font-size: 12px;
     font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.6000000238418579px;
     text-align: left;
     color: #2E2E2E;
 }
 
-ul{
-    list-style-type: none;
-}
 
-.begin li{
+.listline {
+    list-style-type: none;
     display: inline;
 }
 
-.begin img{
+
+.listitem {
+    display: inline;
+}
+
+
+.logo {
     padding-right: 472px;
 }
 
-.heading{
+
+.heading {
     margin-top: 110px;
     margin-left: 250px;
     margin-right: 250px;
@@ -48,10 +54,11 @@ ul{
     padding: 0px, 218px, 75px, 218px;
 }
 
-h1{
+
+h1 {
     margin-top: -7px;
     margin-bottom: 0px;
-    font-family: "Lora";
+    font-family: 'Lora', serif;
     font-size: 50px;
     font-weight: 400;
     line-height: 51px;
@@ -60,8 +67,9 @@ h1{
     color: #2e2e2e;
 }
 
-h2{
-    font-family: "Oxygen";
+
+h2 {
+    font-family: 'Oxygen', sans-serif;
     font-size: 17px;
     font-weight: 400;
     line-height: 20px;
@@ -71,11 +79,14 @@ h2{
     opacity: 0.63;
 }
 
-.image{
+
+.image {
     margin-top: 40px;
     overflow: hidden;
 }
-.image img{
+
+
+.image img {
     padding: 0px;
     height: 534px;
     width: 100%;
@@ -83,49 +94,37 @@ h2{
     margin-bottom: -100px;
 }
 
-.maintext{
+
+.maintext {
     padding: 138px 240px 137px 240px;
-    font-family: "Oxygen";
+    font-family: 'Oxygen', sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 35px;
-    letter-spacing: 0em;
     text-align: left;
     color: #101315;
 }
 
-.end{
-    background: 
-		linear-gradient(rgba(35, 47, 56, 0.6), rgba(35, 47, 56, 0.6)), 
-		url("BACKGROUND.jpg");
+
+.menu2 {
+    background:
+        linear-gradient(rgba(35, 47, 56, 0.6), rgba(35, 47, 56, 0.6)),
+        url(Background.jpg);
     background-position: center center;
     padding: 17px 250px 17px 250px;
     display: flex;
     color: #ffffff;
 }
 
-.end a{
+
+.navigation2 {
     margin: 10px 20px 10px 20px;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: "Oxygen";
+    font-family: 'Oxygen', sans-serif;
     font-size: 11px;
     font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 1px;
     text-align: right;
     opacity: 0.6;
     color: #ffffff;
-}
-
-ul{
-    list-style-type: none;
-}
-
-.end li{
-    display: inline;
-}
-
-.end img{
-    padding-right: 472px;
 }
