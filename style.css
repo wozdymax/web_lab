@@ -1,39 +1,42 @@
 @font-face {
-    font-family: 'Oxygen';
+    font-family: "Oxygen";
     src: url("Oxygen/Oxygen-Regular.ttf");
 }
 
 @font-face {
-    font-family: 'Lora';
+    font-family: "Lora";
     src: url("Lora/Lora-Regular.ttf");
 }
-  
+
 .begin{
     padding: 17px 250px 17px 250px;
     display: flex;
     color: #2e2e2e;
 }
 
-.escape{
-    width: 571px;
-    padding-top: 5px;
-    font-family: "Lora";
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0em; 
-    text-align: justify;
-}
-
-.navigation1{
+.begin a{
     margin: 10px 20px 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
     font-family: "Oxygen";
     font-size: 12px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0.6000000238418579px;
     text-align: left;
+    color: #2E2E2E;
+}
 
+ul{
+    list-style-type: none;
+}
+
+.begin li{
+    display: inline;
+}
+
+.begin img{
+    padding-right: 472px;
 }
 
 .heading{
@@ -92,21 +95,19 @@ h2{
 }
 
 .end{
-    /*background-image: url("D:/Study/web/lab1/BACKGROUND.jpg");*/
     background: 
 		linear-gradient(rgba(35, 47, 56, 0.6), rgba(35, 47, 56, 0.6)), 
-		url("D:/Study/web/lab1/BACKGROUND.jpg");
-    background-position: right center;
-    background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+		url("BACKGROUND.jpg");
+    background-position: center center;
     padding: 17px 250px 17px 250px;
     display: flex;
     color: #ffffff;
 }
 
-.navigation2{
+.end a{
     margin: 10px 20px 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
     font-family: "Oxygen";
     font-size: 11px;
     font-weight: 400;
@@ -114,4 +115,17 @@ h2{
     letter-spacing: 1px;
     text-align: right;
     opacity: 0.6;
+    color: #ffffff;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.end li{
+    display: inline;
+}
+
+.end img{
+    padding-right: 472px;
 }
