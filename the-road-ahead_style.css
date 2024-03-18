@@ -1,16 +1,4 @@
-@font-face {
-    font-family: 'Oxygen';
-    src: url(Oxygen/Oxygen-Regular.ttf);
-}
-
-
-@font-face {
-    font-family: 'Lora';
-    src: url(Lora/Lora-Regular.ttf);
-}
-
-
-.menu1 {
+.header {
     padding: 17px 250px 17px 250px;
     display: flex;
     color: #2e2e2e;
@@ -106,10 +94,10 @@ h2 {
 }
 
 
-.menu2 {
+.footer {
     background:
         linear-gradient(rgba(35, 47, 56, 0.6), rgba(35, 47, 56, 0.6)),
-        url(FooterBack.jpg);
+        url(Images/FooterBack.jpg);
     background-position: center center;
     padding: 17px 250px 17px 250px;
     display: flex;
