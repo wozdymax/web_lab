@@ -109,7 +109,7 @@ h2 {
 .menu2 {
     background:
         linear-gradient(rgba(35, 47, 56, 0.6), rgba(35, 47, 56, 0.6)),
-        url(Background.jpg);
+        url(FooterBack.jpg);
     background-position: center center;
     padding: 17px 250px 17px 250px;
     display: flex;
