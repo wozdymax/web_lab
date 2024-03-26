@@ -97,7 +97,7 @@ h2 {
 .footer {
     background:
         linear-gradient(rgba(35, 47, 56, 0.6), rgba(35, 47, 56, 0.6)),
-        url(Images/FooterBack.jpg);
+        url(/images/footer_back.jpg);
     background-position: center center;
     padding: 17px 250px 17px 250px;
     display: flex;

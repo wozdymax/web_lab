@@ -6,12 +6,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/the-road-ahead_style.css">
+    <link rel="stylesheet" href="styles/post_style.css">
 </head>
 
 <body>
     <header class="header">
-        <img class="logo" src="Images/Logo1.svg" alt="Logo">
+        <img class="logo" src="images/logo1.svg" alt="Logo">
         <ul class="listline">
             <li class="listitem"><a class="navigation1" href="#">Home</a></li>
             <li class="listitem"><a class="navigation1" href="#">Categories</a></li>
@@ -26,7 +26,7 @@
     </div>
 
     <div class="image">
-        <img src="Images/TheRoadAhead.jpg" alt="Photo of starsky">
+        <img src="images/the_road_ahead.jpg" alt="Photo of starsky">
     </div>
 
     <div class="maintext">
@@ -65,7 +65,7 @@
     </div>
     
     <footer class="footer">
-        <img class="logo" src="Images/Logo2.svg" alt="Logo">
+        <img class="logo" src="images/logo2.svg" alt="Logo">
         <ul class="listline">
             <li class="listitem"><a class="navigation2" href="#">Home</a></li>
             <li class="listitem"><a class="navigation2" href="#">Categories</a></li>
