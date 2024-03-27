@@ -10,6 +10,6 @@
             <img class="author-photo" <?= $article['img_modifier'] ?>>
             <span class="article__author-name"><?= $article['author'] ?></span>
         </div>
-        <span class="article__info-date"><?= $article['date'] ?></span>
+        <span class="article__info-date"><?= date('d.m.Y', $post['date']) ?></span>
     </div>
 </article>

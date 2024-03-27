@@ -9,6 +9,7 @@
             <img class="author-photo" <?= $post['img_modifier'] ?>>
             <span class="author-name"><?= $post['author'] ?></span>
         </div>
-        <span class="preview__info-date"><?= $post['date'] ?></span>
+        <span class="preview__info-date"><?= date('d.m.Y', $post['date']) ?></span>
     </div>
+    <a class='preview-link' href='/post?id=<?= $post['id'] ?>'><span></span></a>
     </article>
