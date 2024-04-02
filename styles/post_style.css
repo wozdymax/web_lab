@@ -1,37 +1,39 @@
-.header {
-    padding: 17px 250px 17px 250px;
-    display: flex;
-    color: #2e2e2e;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+.header__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 74px;
+}
 
-.navigation1 {
-    margin: 10px 20px 10px 20px;
+.navigation {
+    width: 960px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navigation__list {
+    width: 376px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__navigation-item {
     text-transform: uppercase;
     text-decoration: none;
     font-family: 'Oxygen', sans-serif;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
     text-align: left;
-    color: #2E2E2E;
+    color: #000000;
 }
-
-
-.listline {
-    list-style-type: none;
-    display: inline;
-}
-
-
-.listitem {
-    display: inline;
-}
-
-
-.logo {
-    padding-right: 472px;
-}
-
 
 .heading {
     margin-top: 110px;
@@ -43,9 +45,7 @@
 }
 
 
-h1 {
-    margin-top: -7px;
-    margin-bottom: 0px;
+.title {
     font-family: 'Lora', serif;
     font-size: 50px;
     font-weight: 400;
@@ -56,7 +56,8 @@ h1 {
 }
 
 
-h2 {
+.subtitle{
+    margin-top: 20px;
     font-family: 'Oxygen', sans-serif;
     font-size: 17px;
     font-weight: 400;
@@ -93,26 +94,29 @@ h2 {
     color: #101315;
 }
 
-
 .footer {
     background:
-        linear-gradient(rgba(35, 47, 56, 0.6), rgba(35, 47, 56, 0.6)),
-        url(/images/footer_back.jpg);
-    background-position: center center;
-    padding: 17px 250px 17px 250px;
-    display: flex;
-    color: #ffffff;
+    linear-gradient(rgba(35, 47, 56, 0.6), rgba(35, 47, 56, 0.6)),
+    url(/images/footer_back.jpg);
+    background-position: center;
+    height: 90px;
 }
 
+.footer__navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89px;
+}
 
-.navigation2 {
+.footer__navigation-item {
     margin: 10px 20px 10px 20px;
     text-transform: uppercase;
     text-decoration: none;
     font-family: 'Oxygen', sans-serif;
     font-size: 11px;
     font-weight: 400;
-    text-align: right;
-    opacity: 0.6;
+    text-align: left;
     color: #ffffff;
+    opacity: 0.6;
 }
