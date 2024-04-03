@@ -4,8 +4,8 @@ $post =
         'id' => 1,
         'title' => 'The Road Ahead',
         'subtitle' => 'The road ahead might be paved - it might not be.',
-        'img_modifier' => 'src="images/the_road_ahead.jpg" alt="Photo of starsky"',
-        'text' => 'Dark spruce forest frowned on either side the frozen waterway. The trees had been stripped by a recent wind
+        'post_photo' => 'src="images/the_road_ahead.jpg" alt="Photo of starsky"',
+        'post_text' => 'Dark spruce forest frowned on either side the frozen waterway. The trees had been stripped by a recent wind
                     of their white covering of frost, and they seemed to lean towards each other, black and ominous, in the
                     fading light. A vast silence reigned over the land. The land itself was a desolation, lifeless, without
                     movement, so lone and cold that the spirit of it was not even that of sadness. There was a hint in it of
@@ -77,11 +77,11 @@ $post =
         </div>
 
         <div class="image">
-            <img <?= $post['img_modifier'] ?>>
+            <img <?= $post['post_photo'] ?>>
         </div>
 
         <div class="maintext">
-            <p><?= $post['text'] ?></p>
+            <p><?= $post['post_text'] ?></p>
         </div>
     </main>
 

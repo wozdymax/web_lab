@@ -26,7 +26,7 @@ $posts = [
 $articles = [
     [
         'id' => 3,
-        'photo' => 'src="images/still_standing.jpg" alt="Balloon parade"',
+        'post_photo' => 'src="images/still_standing.jpg" alt="Balloon parade"',
         'title' => 'Still Standing Tall',
         'subtitle' => 'Life begins at the end of your comfort zone.',
         'img_modifier' => 'src="images/william_wong.jpg" alt="William Wong photo"',
@@ -35,7 +35,7 @@ $articles = [
     ],
     [
         'id' => 4,
-        'photo' => 'src="images/sunny_side_up.jpg" alt="Bridge"',
+        'post_photo' => 'src="images/sunny_side_up.jpg" alt="Bridge"',
         'title' => 'Sunny Side Up',
         'subtitle' => 'No place is ever as bad as they tell you it`s going to be.',
         'img_modifier' => 'src="images/mat_volges.jpg" alt="Mat Wolges photo"',
@@ -44,7 +44,7 @@ $articles = [
     ],
     [
         'id' => 5,
-        'photo' => 'src="images/water_falls.jpg" alt="Lake at sunset"',
+        'post_photo' => 'src="images/water_falls.jpg" alt="Lake at sunset"',
         'title' => 'Water Falls',
         'subtitle' => 'We travel not to escape life, but for life not to escape us.',
         'img_modifier' => 'src="images/mat_volges.jpg" alt="Mat Wolges photo"',
@@ -53,7 +53,7 @@ $articles = [
     ],
     [
         'id' => 6,
-        'photo' => 'src="images/through_the_mist.jpg" alt="Sea Surface"',
+        'post_photo' => 'src="images/through_the_mist.jpg" alt="Sea Surface"',
         'title' => 'Through The Mist',
         'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
         'img_modifier' => 'src="images/william_wong.jpg" alt="William Wong photo"',
@@ -62,7 +62,7 @@ $articles = [
     ],
     [
         'id' => 7,
-        'photo' => 'src="images/awaken_early.jpg" alt="Funicular in the fog"',
+        'post_photo' => 'src="images/awaken_early.jpg" alt="Funicular in the fog"',
         'title' => 'Awaken Early',
         'subtitle' => 'Not all those who wander are lost.',
         'img_modifier' => 'src="images/mat_volges.jpg" alt="Mat Wolges photo"',
@@ -71,14 +71,17 @@ $articles = [
     ],
     [
         'id' => 8,
-        'photo' => 'src="images/try_it_always.jpg" alt="Man at the waterfall"',
+        'post_photo' => 'src="images/try_it_always.jpg" alt="Man at the waterfall"',
         'title' => 'Try It Always',
-        'subtitle' => 'he world is a book, and those who do not travel read only one page.',
+        'subtitle' => 'The world is a book, and those who do not travel read only one page.',
         'img_modifier' => 'src="images/mat_volges.jpg" alt="Mat Wolges photo"',
         'author' => 'Mat Wogels',
         'date' => 1443207600,    
     ],
 ]
+
+
+
 ?>
 
 
