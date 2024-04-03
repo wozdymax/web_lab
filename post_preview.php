@@ -2,7 +2,7 @@
     <div <?= $post['tag'] ?>>
         <?= $post['tag_text'] ?>
     </div>
-    <h3><a class="preview-heading" href='/post?id=<?= $post['id'] ?>'><?= $post['title'] ?></a></h3>
+    <h3><a class="preview-heading" href='/post.php?id=<?= $post['id'] ?>'><?= $post['title'] ?></a></h3>
     <h4 class="preview-subtitle"><?= $post['subtitle'] ?></h4>
     <div class="preview__info">
         <div class="preview__info__author">

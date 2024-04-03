@@ -102,7 +102,7 @@ $articles = [
             <div class="navigation">
                 <img class="navigation__logo" src="images/logo2.svg" alt="Logo">
                 <nav class="navigation__list">
-                    <a class="header__navigation-item" href="#">Home</a>
+                    <a class="header__navigation-item" href="home.php">Home</a>
                     <a class="header__navigation-item" href="#">Categories</a>
                     <a class="header__navigation-item" href="#">About</a>
                     <a class="header__navigation-item" href="#">Contact</a>
@@ -185,7 +185,7 @@ $articles = [
             <div class="navigation">
                 <img class="navigation__logo" src="images/logo2.svg" alt="Logo">
                 <nav class="navigation__list">
-                    <a class="footer__navigation__item" href="#">Home</a>
+                    <a class="footer__navigation__item" href="home.php">Home</a>
                     <a class="footer__navigation__item" href="#">Categories</a>
                     <a class="footer__navigation__item" href="#">About</a>
                     <a class="footer__navigation__item" href="#">Contact</a>

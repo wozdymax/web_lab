@@ -57,7 +57,7 @@ $post =
         <div class="navigation">
             <img class="navigation__logo" src="images/logo1.svg" alt="Logo">
             <nav class="navigation__list">
-                <a class="header__navigation-item" href="#">Home</a>
+                <a class="header__navigation-item" href="home.php">Home</a>
                 <a class="header__navigation-item" href="#">Categories</a>
                 <a class="header__navigation-item" href="#">About</a>
                 <a class="header__navigation-item" href="#">Contact</a>
@@ -65,15 +65,10 @@ $post =
         </div>
     </header>
 
-    <div>
-        <?php 
-            $url = $_SERVER['REQUEST_URI'];
-            $parts = parse_url($url); 
-            parse_str($parts['query'], $query);
-            $id = $query['id'];
-            echo 'Post id = ' . $id;
-        ?><br>
-    </div>
+    <?php 
+            $postId = $_GET['id'];
+            echo "Post id = {$postId}";
+    ?>
 
     <main>
         <div class="heading">
@@ -95,7 +90,7 @@ $post =
             <div class="navigation">
                 <img class="navigation__logo" src="images/logo2.svg" alt="Logo">
                 <nav class="navigation__list">
-                    <a class="footer__navigation-item" href="#">Home</a>
+                    <a class="footer__navigation-item" href="home.php">Home</a>
                     <a class="footer__navigation-item" href="#">Categories</a>
                     <a class="footer__navigation-item" href="#">About</a>
                     <a class="footer__navigation-item" href="#">Contact</a>
