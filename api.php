@@ -3,7 +3,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 if ($method != 'POST')
 {
-    echo 'Ожидался метод POST';
+    echo 'Waiting POST';
     return;
 }
 
@@ -36,5 +36,4 @@ function saveFile(string $file, string $data): void
 }
 
 
-  
-?>
+  ?>

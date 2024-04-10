@@ -1,4 +1,4 @@
-<article class=<?= $post['name'] ?>>
+<article class=<?= $post['preview_name'] ?>>
     <div <?= $post['tag'] ?>>
         <?= $post['tag_text'] ?>
     </div>
@@ -9,6 +9,6 @@
             <img class="author-photo" <?= $post['img_modifier'] ?>>
             <span class="author-name"><?= $post['author'] ?></span>
         </div>
-        <span class="preview__info-date"><?= date('d.m.Y', $post['date']) ?></span>
+        <span class="preview__info-date"><?= $post['publish_date'] ?></span>
     </div>
     </article>

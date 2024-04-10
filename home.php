@@ -1,84 +1,53 @@
 <?php
-$posts = [
-    [
-        'id' => 1,
-        'name' => '"the-road-ahead"', 
-        'tag' => '', 
-        'tag_text' => '',
-        'title' => 'The Road Ahead',
-        'subtitle' => 'The road ahead might be paved - it might not be.',
-        'img_modifier' => 'src="images/mat_volges.jpg" alt="Mat Wolges photo"',
-        'author' => 'Mat Wogels',
-        'date' => 1443207600,
-    ],
-    [
-        'id' => 2,
-        'name' => '"from-top-down"',
-        'tag' => 'class="preview-tag"', 
-        'tag_text' => '<p>Adventure</p>',
-        'title' => 'From Top Down',
-        'subtitle' => 'Once a year, go someplace you`ve never been before.',
-        'img_modifier' => 'src="images/william_wong.jpg" alt="William Wong photo"',
-        'author' => 'William Wong',
-        'date' => 1443207600,
-    ],
-];
-$articles = [
-    [
-        'id' => 3,
-        'post_photo' => 'src="images/still_standing.jpg" alt="Balloon parade"',
-        'title' => 'Still Standing Tall',
-        'subtitle' => 'Life begins at the end of your comfort zone.',
-        'img_modifier' => 'src="images/william_wong.jpg" alt="William Wong photo"',
-        'author' => 'William Wong',
-        'date' => 1443207600,    
-    ],
-    [
-        'id' => 4,
-        'post_photo' => 'src="images/sunny_side_up.jpg" alt="Bridge"',
-        'title' => 'Sunny Side Up',
-        'subtitle' => 'No place is ever as bad as they tell you it`s going to be.',
-        'img_modifier' => 'src="images/mat_volges.jpg" alt="Mat Wolges photo"',
-        'author' => 'Mat Wogels',
-        'date' => 1443207600,    
-    ],
-    [
-        'id' => 5,
-        'post_photo' => 'src="images/water_falls.jpg" alt="Lake at sunset"',
-        'title' => 'Water Falls',
-        'subtitle' => 'We travel not to escape life, but for life not to escape us.',
-        'img_modifier' => 'src="images/mat_volges.jpg" alt="Mat Wolges photo"',
-        'author' => 'Mat Wogels',
-        'date' => 1443207600,    
-    ],
-    [
-        'id' => 6,
-        'post_photo' => 'src="images/through_the_mist.jpg" alt="Sea Surface"',
-        'title' => 'Through The Mist',
-        'subtitle' => 'Travel makes you see what a tiny place you occupy in the world.',
-        'img_modifier' => 'src="images/william_wong.jpg" alt="William Wong photo"',
-        'author' => 'William Wong',
-        'date' => 1443207600,    
-    ],
-    [
-        'id' => 7,
-        'post_photo' => 'src="images/awaken_early.jpg" alt="Funicular in the fog"',
-        'title' => 'Awaken Early',
-        'subtitle' => 'Not all those who wander are lost.',
-        'img_modifier' => 'src="images/mat_volges.jpg" alt="Mat Wolges photo"',
-        'author' => 'Mat Wogels',
-        'date' => 1443207600,    
-    ],
-    [
-        'id' => 8,
-        'post_photo' => 'src="images/try_it_always.jpg" alt="Man at the waterfall"',
-        'title' => 'Try It Always',
-        'subtitle' => 'The world is a book, and those who do not travel read only one page.',
-        'img_modifier' => 'src="images/mat_volges.jpg" alt="Mat Wolges photo"',
-        'author' => 'Mat Wogels',
-        'date' => 1443207600,    
-    ],
-]
+$posts = [];
+$articles = [];
+
+const HOST = 'localhost';
+const USERNAME = 'root';
+const PASSWORD = '';
+const DATABASE = 'blog';
+
+function createDBConnection(): mysqli
+{
+    $conn = new mysqli(HOST, USERNAME, PASSWORD, DATABASE);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    return $conn;
+}
+
+function closeDBConnection(mysqli $conn): void
+{
+    $conn->close();
+}
+
+function getAndPrintPostsFromDB(mysqli $conn, &$posts): void
+{
+    $sql = "SELECT * FROM post WHERE featured = 1";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $posts[] = $row;
+        }
+    }
+}
+
+function getAndPrintArticlesFromDB(mysqli $conn, &$articles): void
+{
+    $sql = "SELECT * FROM post WHERE featured = 0";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $articles[] = $row;
+        }
+    }
+}
+
+$conn = createDBConnection();
+getAndPrintPostsFromDB($conn, $posts);
+getAndPrintArticlesFromDB($conn, $articles);
+closeDBConnection($conn);
 
 
 
@@ -148,7 +117,7 @@ $articles = [
                 </div>
 
                 <div class='posts__popular__preview'>
-                    <?php 
+                    <?php
 
                     foreach ($posts as $post) {
                         include 'post_preview.php';
@@ -167,12 +136,12 @@ $articles = [
 
                 <div class="articles">
 
-                <?php 
+                    <?php
 
-                foreach ($articles as $article) {
-                    include 'article_preview.php';
-                }
-                ?>
+                    foreach ($articles as $article) {
+                        include 'article_preview.php';
+                    }
+                    ?>
 
                 </div>
 
